@@ -1,0 +1,410 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#183b35">
+  <meta name="description" content="Find a home, shop, office or showroom on rent in Bahadurgarh, or connect with genuine tenants for your property. Contact Ramesh Kumar on WhatsApp.">
+  <title>Bahadurgarh Property Rental Service | Ramesh Kumar</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&family=Noto+Sans+Devanagari:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      color-scheme: light;
+      --ink: #202b27;
+      --muted: #64716b;
+      --paper: #fbfaf7;
+      --green: #183b35;
+      --green-light: #e5eee8;
+      --orange: #db6a43;
+      --line: #e4e5df;
+      --sans: "DM Sans", sans-serif;
+      --display: "Manrope", sans-serif;
+      --hindi: "Noto Sans Devanagari", sans-serif;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      background: var(--paper);
+      color: var(--ink);
+      font-family: var(--sans);
+      -webkit-font-smoothing: antialiased;
+    }
+    a { color: inherit; }
+    .wrap { width: min(1160px, calc(100% - 48px)); margin-inline: auto; }
+    .topbar { height: 76px; display: flex; align-items: center; border-bottom: 1px solid var(--line); }
+    .nav { display: flex; align-items: center; justify-content: space-between; gap: 24px; }
+    .brand { display: flex; flex: 0 1 auto; align-items: center; min-width: 0; text-decoration: none; }
+    .brand-logo { display: block; width: 240px; max-width: 100%; height: auto; }
+    .nav-links { display: flex; align-items: center; gap: 28px; }
+    .nav-links a { color: #4f5d57; text-decoration: none; font-size: 13px; font-weight: 600; }
+    .nav-links a:hover { color: var(--orange); }
+    .nav-actions { display: flex; align-items: center; gap: 10px; }
+    .language-toggle { min-height: 40px; padding: 0 12px; border: 1px solid var(--line); border-radius: 5px; color: var(--green); background: transparent; font: 700 12px var(--sans); cursor: pointer; }
+    .language-toggle:hover { background: var(--green-light); }
+    .nav-cta, .button { display: inline-flex; align-items: center; justify-content: center; gap: 9px; min-height: 46px; padding: 0 18px; border-radius: 5px; font: 700 13px var(--sans); text-decoration: none; transition: background .2s ease, transform .2s ease; }
+    .nav-cta, .button-green { color: white; background: var(--green); }
+    .nav-cta:hover, .button-green:hover { background: #24534a; transform: translateY(-1px); }
+    .button svg, .nav-cta svg { width: 17px; height: 17px; }
+
+    .hero { min-height: 570px; position: relative; display: flex; align-items: center; overflow: hidden; color: white; background: #263a33; }
+    .hero-photo { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: center 54%; }
+    .hero-shade { position: absolute; inset: 0; background: rgba(18, 36, 31, .64); }
+    .hero-content { position: relative; z-index: 1; padding-block: 72px; max-width: 710px; }
+    .eyebrow { display: inline-flex; align-items: center; gap: 9px; margin: 0 0 22px; color: #f5c6a7; font-size: 11px; font-weight: 700; letter-spacing: 1.4px; text-transform: uppercase; }
+    .eyebrow::before { content: ""; width: 25px; height: 1px; background: currentColor; }
+    h1 { max-width: 690px; margin: 0; font: 800 clamp(42px, 6vw, 68px)/1.08 var(--display); letter-spacing: 0; }
+    .hero-hindi { margin: 13px 0 0; font: 600 clamp(20px, 2.5vw, 26px)/1.45 var(--sans); color: #e9d9c9; }
+    .hero-intro { max-width: 520px; margin: 20px 0 0; color: #e1e7e2; font-size: 16px; line-height: 1.75; }
+    .hero-actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 29px; }
+    .button-light { color: var(--green); background: #fff; }
+    .button-light:hover { background: #f1eee8; transform: translateY(-1px); }
+    .hero-note { display: flex; align-items: center; gap: 8px; margin-top: 23px; color: #e4e9e5; font-size: 12px; }
+    .hero-note svg { width: 15px; height: 15px; color: #f5c6a7; }
+
+    .quick-strip { background: #fff; border-bottom: 1px solid var(--line); }
+    .quick-items { display: grid; grid-template-columns: repeat(3, 1fr); }
+    .quick-item { display: flex; align-items: center; gap: 13px; min-height: 92px; padding: 16px 24px; border-right: 1px solid var(--line); }
+    .quick-item:first-child { padding-left: 0; }
+    .quick-item:last-child { border: 0; }
+    .quick-icon { width: 38px; height: 38px; display: grid; flex: 0 0 auto; place-items: center; color: var(--green); background: var(--green-light); border-radius: 50%; }
+    .quick-item > .quick-icon { display: grid; place-items: center; margin: 0; line-height: 0; }
+    .quick-icon svg { display: block; width: 24px; height: 24px; }
+    .quick-item strong { display: block; font: 700 13px var(--display); }
+    .quick-item span { display: block; margin-top: 4px; color: var(--muted); font-size: 11px; }
+
+    .section { padding-block: 88px; }
+    .section-heading { max-width: 660px; margin-bottom: 35px; }
+    .section-kicker { margin: 0 0 10px; color: var(--orange); font-size: 11px; font-weight: 700; letter-spacing: 1.35px; text-transform: uppercase; }
+    h2 { margin: 0; font: 800 clamp(29px, 4vw, 40px)/1.2 var(--display); letter-spacing: 0; }
+    .section-heading > p:last-child { margin: 13px 0 0; color: var(--muted); font-size: 15px; line-height: 1.7; }
+    .service-grid { display: grid; grid-template-columns: repeat(2, 1fr); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+    .service { min-height: 278px; padding: 30px 36px 32px 0; }
+    .service + .service { padding-left: 36px; border-left: 1px solid var(--line); }
+    .service-icon { width: 45px; height: 45px; display: grid; place-items: center; margin-bottom: 21px; color: var(--green); background: var(--green-light); border-radius: 50%; }
+    .service-icon svg { width: 22px; height: 22px; }
+    .service h3 { margin: 0; font: 800 21px var(--display); }
+    .service .hindi-title { margin: 5px 0 16px; color: var(--muted); font: 500 14px var(--sans); }
+    .service ul { display: grid; gap: 11px; margin: 0; padding: 0; list-style: none; }
+    .service li { display: flex; align-items: flex-start; gap: 10px; color: #4c5a54; font-size: 13px; line-height: 1.55; }
+    .check { flex: 0 0 auto; color: #5e8b69; font-weight: 700; }
+    .service-link { display: inline-flex; align-items: center; gap: 7px; margin-top: 23px; color: var(--green); font-size: 13px; font-weight: 700; text-decoration: none; }
+    .service-link:hover { color: var(--orange); }
+    .service-link svg { width: 16px; height: 16px; }
+
+    .hindi-band { padding-block: 72px; background: #edf1eb; }
+    .hindi-layout { display: grid; grid-template-columns: .85fr 1.15fr; gap: 70px; align-items: start; }
+    .hindi-layout h2 { font: 800 clamp(29px, 4vw, 39px)/1.35 var(--display); }
+    .hindi-layout .intro { margin: 14px 0 0; color: var(--muted); font: 400 15px/1.9 var(--sans); }
+    .hindi-list { display: grid; grid-template-columns: 1fr 1fr; column-gap: 28px; row-gap: 0; padding: 0; margin: 4px 0 0; list-style: none; }
+    .hindi-list li { display: flex; align-items: flex-start; gap: 10px; padding: 13px 0; border-bottom: 1px solid #d7dfd7; color: #35443d; font: 500 14px/1.7 var(--sans); }
+    .hindi-list .check { padding-top: 1px; }
+    .hindi-prompt { grid-column: 1 / -1; margin: 18px 0 0; color: var(--green); font: 700 15px/1.8 var(--hindi); }
+
+    .contact { padding-block: 74px; background: var(--green); color: white; }
+    .contact-layout { display: flex; align-items: center; justify-content: space-between; gap: 32px; }
+    .contact .section-kicker { color: #f1b28f; }
+    .contact h2 { max-width: 600px; }
+    .contact .contact-sub { margin: 11px 0 0; color: #d2ded8; font: 400 15px/1.8 var(--sans); }
+    .contact-actions { display: flex; flex-wrap: wrap; gap: 11px; }
+    .contact .button-light { white-space: nowrap; }
+    .button-outline { color: white; border: 1px solid #79918a; }
+    .button-outline:hover { background: #285148; }
+    footer { padding-block: 22px; background: #12302b; color: #bdcbc4; font-size: 11px; }
+    .footer-inner { display: flex; align-items: center; justify-content: space-between; gap: 16px; }
+    .footer-inner a { color: #fff; text-decoration: none; }
+    .floating-wa { position: fixed; z-index: 5; right: 22px; bottom: 22px; width: 54px; height: 54px; display: grid; place-items: center; color: white; background: #218c63; border-radius: 50%; box-shadow: 0 5px 18px #173c3470; transition: transform .2s ease; }
+    .floating-wa:hover { transform: translateY(-3px); }
+    .floating-wa svg { width: 28px; height: 28px; }
+
+    @media (max-width: 760px) {
+      .wrap { width: min(100% - 36px, 600px); }
+      .topbar { height: 68px; }
+      .brand-logo { width: 180px; }
+      .nav-links { display: none; }
+      .nav-cta { min-height: 41px; padding-inline: 12px; font-size: 12px; }
+      .language-toggle { min-height: 38px; padding-inline: 9px; }
+      .hero { min-height: 570px; }
+      .hero-photo { object-position: 58% center; }
+      .hero-shade { background: rgba(18, 36, 31, .7); }
+      .hero-content { padding-block: 58px; }
+      .hero-intro { max-width: 450px; font-size: 15px; }
+      .quick-items { grid-template-columns: 1fr; padding-block: 6px; }
+      .quick-item, .quick-item:first-child { min-height: 67px; padding: 10px 0; border-right: 0; border-bottom: 1px solid var(--line); }
+      .quick-item:last-child { border-bottom: 0; }
+      .quick-icon { width: 34px; height: 34px; }
+      .section { padding-block: 64px; }
+      .service { min-height: auto; padding: 25px 18px 25px 0; }
+      .service + .service { padding-left: 18px; }
+      .service h3 { font-size: 18px; }
+      .hindi-band { padding-block: 58px; }
+      .hindi-layout { grid-template-columns: 1fr; gap: 23px; }
+      .hindi-list { column-gap: 18px; }
+      .contact { padding-block: 58px; }
+      .contact-layout { align-items: flex-start; flex-direction: column; }
+      .footer-inner { align-items: flex-start; flex-direction: column; gap: 8px; }
+    }
+    @media (max-width: 480px) {
+      .wrap { width: calc(100% - 32px); }
+      .nav { gap: 4px; }
+      .brand-logo { width: 130px; }
+      .nav-actions { gap: 5px; }
+      .nav-cta { min-height: 38px; gap: 4px; padding-inline: 7px; font-size: 11px; }
+      .nav-cta svg { width: 14px; height: 14px; }
+      .language-toggle { min-height: 36px; padding-inline: 7px; font-size: 10px; }
+      .hero { min-height: 560px; }
+      .hero-content { padding-block: 48px; }
+      .eyebrow { font-size: 10px; }
+      h1 { font-size: 42px; }
+      .hero-actions { align-items: stretch; flex-direction: column; max-width: 280px; }
+      .button { min-height: 47px; }
+      .service-grid { grid-template-columns: 1fr; }
+      .service { padding: 25px 0 28px; }
+      .service + .service { padding: 27px 0 25px; border-top: 1px solid var(--line); border-left: 0; }
+      .hindi-list { grid-template-columns: 1fr; }
+      .hindi-prompt { grid-column: auto; }
+      .contact-actions { align-items: stretch; flex-direction: column; width: 100%; }
+      .floating-wa { right: 15px; bottom: 15px; width: 50px; height: 50px; }
+    }
+    @media (max-width: 320px) {
+      .brand-logo { width: 96px; }
+      .nav-actions { gap: 3px; }
+      .nav-cta { gap: 3px; padding-inline: 5px; font-size: 10px; }
+      .nav-cta svg { width: 13px; height: 13px; }
+      .language-toggle { padding-inline: 5px; font-size: 9px; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after { scroll-behavior: auto !important; transition-duration: .01ms !important; }
+    }
+    html[lang="hi"] body { font-family: var(--hindi); }
+    html[lang="hi"] h1, html[lang="hi"] h2, html[lang="hi"] h3 { font-family: var(--hindi); }
+    html[lang="hi"] .hero-hindi, html[lang="hi"] .service .hindi-title, html[lang="hi"] .hindi-layout h2, html[lang="hi"] .hindi-layout .intro, html[lang="hi"] .hindi-list li, html[lang="hi"] .contact .contact-sub { font-family: var(--hindi); }
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <nav class="nav wrap" aria-label="Main navigation">
+      <a class="brand" href="#home" aria-label="Bahadurgarh Property Rental Service home" data-i18n-aria="brandLabel">
+        <img class="brand-logo" src="logo.svg" alt="BAHADURGARH PROPERTY RENTAL SERVICE">
+      </a>
+      <div class="nav-links">
+        <a href="#services" data-i18n="navServices">Our services</a>
+        <a href="#contact" data-i18n="navContact">Contact</a>
+      </div>
+      <div class="nav-actions">
+        <button class="language-toggle" type="button" aria-label="Switch language to Hindi" aria-pressed="false">हिंदी</button>
+        <a class="nav-cta" data-message="general" href="https://wa.me/919911450828?text=Hi%20Ramesh%20ji%2C%20I%20am%20looking%20for%20rental%20property%20services%20in%20Bahadurgarh." target="_blank" rel="noopener noreferrer">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.4 8.4 0 0 1-3.8-.9L3 21l1.9-5.7a8.4 8.4 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.4 8.4 0 0 1 3.8-.9h.5a8.5 8.5 0 0 1 8 8z"/></svg>
+        WhatsApp
+        </a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home" aria-labelledby="hero-title">
+      <img class="hero-photo" src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=2200&q=85" alt="A welcoming modern home with a garden" fetchpriority="high" data-i18n-alt="heroImageAlt">
+      <div class="hero-shade" aria-hidden="true"></div>
+      <div class="hero-content wrap">
+        <p class="eyebrow" data-i18n="heroEyebrow">Bahadurgarh &amp; nearby areas</p>
+        <h1 id="hero-title" data-i18n="heroTitle">A better place<br>to call your own.</h1>
+        <p class="hero-hindi" data-i18n="heroHindi" lang="hi">बहादुरगढ़ में किराये की सही जगह</p>
+        <p class="hero-intro" data-i18n="heroIntro">Looking for a home, shop, office or showroom on rent? Or ready to rent out your property? We’ll help you find the right match.</p>
+        <div class="hero-actions">
+          <a class="button button-light" data-message="tenant" href="https://wa.me/919911450828?text=Hi%20Ramesh%20ji%2C%20I%20am%20looking%20for%20a%20property%20on%20rent%20in%20Bahadurgarh." target="_blank" rel="noopener noreferrer"><span data-i18n="findRental">Find a rental</span> <span aria-hidden="true">↗</span></a>
+          <a class="button button-green" data-message="owner" href="https://wa.me/919911450828?text=Hi%20Ramesh%20ji%2C%20I%20want%20to%20rent%20out%20my%20property%20in%20Bahadurgarh." target="_blank" rel="noopener noreferrer"><span data-i18n="rentOut">Rent out my property</span> <span aria-hidden="true">↗</span></a>
+        </div>
+        <div class="hero-note">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 5-8 12-8 12S4 15 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="2.5"/></svg>
+          <span data-i18n="personalAssistance">Personal assistance from Ramesh Kumar</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="quick-strip" aria-label="Service highlights" data-i18n-aria="highlightsLabel">
+      <div class="quick-items wrap">
+        <div class="quick-item"><span class="quick-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span><div><strong data-i18n="fastAssistance">Fast assistance</strong><span data-i18n="localHelp">Local help when you need it</span></div></div>
+        <div class="quick-item"><span class="quick-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="7" r="4"/><path d="M3 21v-2a6 6 0 0 1 12 0v2M16 11l2 2 4-4"/></svg></span><div><strong data-i18n="genuineLeads">Genuine leads</strong><span data-i18n="ownersSeekers">For owners &amp; seekers</span></div></div>
+        <div class="quick-item"><span class="quick-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18M5 21V7l8-4v18M19 21V11l-6-4"/><path d="M8 9h.01M8 12h.01M8 15h.01M16 14h.01M16 17h.01"/></svg></span><div><strong data-i18n="resCommercial">Residential &amp; commercial</strong><span data-i18n="propertyTypes">Homes, shops, offices &amp; showrooms</span></div></div>
+      </div>
+    </section>
+
+    <section class="section wrap" id="services" aria-labelledby="services-title">
+      <div class="section-heading">
+        <p class="section-kicker" data-i18n="servicesKicker">How we can help</p>
+        <h2 id="services-title" data-i18n="servicesTitle">One local contact.<br>Every kind of rental.</h2>
+        <p data-i18n="servicesIntro">Whether you’re letting a property or looking for one, get practical assistance for residential and commercial rentals.</p>
+      </div>
+      <div class="service-grid">
+        <article class="service">
+          <span class="service-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="m3 10 9-7 9 7v10a1 1 0 0 1-1 1h-6v-7h-4v7H4a1 1 0 0 1-1-1z"/></svg></span>
+          <h3 data-i18n="ownersTitle">For property owners</h3>
+          <p class="hindi-title" data-i18n="ownersSubtitle" lang="hi">प्रॉपर्टी मालिकों के लिए</p>
+          <ul>
+            <li><span class="check" aria-hidden="true">✓</span><span data-i18n="ownerHouse">Rent out your house or flat</span></li>
+            <li><span class="check" aria-hidden="true">✓</span><span data-i18n="ownerCommercial">Rent out your shop, office or showroom</span></li>
+            <li><span class="check" aria-hidden="true">✓</span><span data-i18n="reliableTenants">Get help finding genuine, reliable tenants</span></li>
+          </ul>
+          <a class="service-link" data-message="owner" href="https://wa.me/919911450828?text=Hi%20Ramesh%20ji%2C%20I%20want%20to%20rent%20out%20my%20property%20in%20Bahadurgarh." target="_blank" rel="noopener noreferrer"><span data-i18n="listProperty">List my property</span> <span aria-hidden="true">→</span></a>
+        </article>
+        <article class="service">
+          <span class="service-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="10.8" cy="10.8" r="6.8"/><path d="m16 16 5 5M8 11h5M10.5 8.5v5"/></svg></span>
+          <h3 data-i18n="tenantsTitle">For tenants &amp; businesses</h3>
+          <p class="hindi-title" data-i18n="tenantsSubtitle" lang="hi">किरायेदारों एवं व्यवसायों के लिए</p>
+          <ul>
+            <li><span class="check" aria-hidden="true">✓</span><span data-i18n="tenantHouse">Find a house or flat on rent</span></li>
+            <li><span class="check" aria-hidden="true">✓</span><span data-i18n="tenantCommercial">Find a shop, office or showroom</span></li>
+            <li><span class="check" aria-hidden="true">✓</span><span data-i18n="budgetLocation">Explore options by budget and location</span></li>
+          </ul>
+          <a class="service-link" data-message="tenant" href="https://wa.me/919911450828?text=Hi%20Ramesh%20ji%2C%20I%20am%20looking%20for%20a%20property%20on%20rent%20in%20Bahadurgarh." target="_blank" rel="noopener noreferrer"><span data-i18n="tellUs">Tell us what you need</span> <span aria-hidden="true">→</span></a>
+        </article>
+      </div>
+    </section>
+
+    <section class="hindi-band" id="hindi" aria-labelledby="hindi-title">
+      <div class="hindi-layout wrap">
+        <div>
+          <p class="section-kicker" data-i18n="localSupport">आपकी स्थानीय रेंटल सहायता</p>
+          <h2 id="hindi-title" data-i18n="hindiSectionTitle">बहादुरगढ़ में किराये की प्रॉपर्टी चाहिए?</h2>
+          <p class="intro" data-i18n="hindiSectionIntro">घर, फ्लैट, दुकान, ऑफिस एवं शोरूम किराये से संबंधित सेवाओं के लिए संपर्क करें। हम आपकी जरूरत के अनुसार सहायता करेंगे।</p>
+        </div>
+        <ul class="hindi-list">
+          <li><span class="check" aria-hidden="true">✓</span><span data-i18n="hindiOwnerHome">अपना घर या फ्लैट किराये पर दें</span></li>
+          <li><span class="check" aria-hidden="true">✓</span><span data-i18n="hindiTenantHome">किराये पर घर या फ्लैट ढूँढें</span></li>
+          <li><span class="check" aria-hidden="true">✓</span><span data-i18n="hindiOwnerCommercial">दुकान, ऑफिस या शोरूम किराये पर दें</span></li>
+          <li><span class="check" aria-hidden="true">✓</span><span data-i18n="hindiTenantCommercial">किराये पर दुकान, ऑफिस या शोरूम ढूँढें</span></li>
+          <li><span class="check" aria-hidden="true">✓</span><span data-i18n="hindiGenuine">विश्वसनीय किरायेदार खोजने में सहायता</span></li>
+          <li><span class="check" aria-hidden="true">✓</span><span data-i18n="hindiBudget">बजट एवं लोकेशन के अनुसार विकल्प</span></li>
+          <li class="hindi-prompt" data-i18n="serviceArea">सेवा क्षेत्र: बहादुरगढ़ एवं आसपास के क्षेत्र</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="contact" id="contact" aria-labelledby="contact-title">
+      <div class="contact-layout wrap">
+        <div>
+          <p class="section-kicker" data-i18n="contactKicker">Let’s find your next place</p>
+          <h2 id="contact-title" data-i18n="contactTitle">Start with a quick message.</h2>
+          <p class="contact-sub" data-i18n="contactSubtitle">एक कॉल करें – आपकी Rental Requirement में सहायता मिलेगी।</p>
+        </div>
+        <div class="contact-actions">
+          <a class="button button-light" data-message="general" href="https://wa.me/919911450828?text=Hi%20Ramesh%20ji%2C%20I%20am%20looking%20for%20rental%20property%20services%20in%20Bahadurgarh." target="_blank" rel="noopener noreferrer">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.4 8.4 0 0 1-3.8-.9L3 21l1.9-5.7a8.4 8.4 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.4 8.4 0 0 1 3.8-.9h.5a8.5 8.5 0 0 1 8 8z"/></svg>
+            <span data-i18n="whatsappRamesh">WhatsApp Ramesh</span>
+          </a>
+          <a class="button button-outline" href="tel:+919911450828" data-i18n="callRamesh">Call 99114 50828</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-inner wrap">
+      <span data-i18n="footerService">Bahadurgarh Property Rental Service · Residential &amp; Commercial</span>
+      <span><span data-i18n="footerContact">Ramesh Kumar</span> · <a href="tel:+919911450828">+91 99114 50828</a></span>
+    </div>
+  </footer>
+
+  <a class="floating-wa" data-message="general" href="https://wa.me/919911450828?text=Hi%20Ramesh%20ji%2C%20I%20am%20looking%20for%20rental%20property%20services%20in%20Bahadurgarh." target="_blank" rel="noopener noreferrer" aria-label="Message Ramesh Kumar on WhatsApp" data-i18n-aria="floatingWhatsappLabel">
+    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.198.297-.768.966-.942 1.164-.173.198-.347.223-.644.074-.297-.149-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.074-.149-.669-1.611-.916-2.206-.242-.579-.487-.5-.669-.51l-.57-.01c-.198 0-.52.074-.792.372-.273.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.076 4.487.709.306 1.262.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.999-3.648-.235-.374a9.86 9.86 0 0 1-1.511-5.26c.002-5.45 4.437-9.884 9.892-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.438 9.884-9.889 9.884m8.413-18.297A11.815 11.815 0 0 0 12.044 0C5.47 0 .12 5.349.117 11.923c0 2.096.547 4.142 1.588 5.946L0 24l6.304-1.654a11.882 11.882 0 0 0 5.737 1.462h.005c6.572 0 11.923-5.349 11.926-11.923a11.839 11.839 0 0 0-3.508-8.397Z"/></svg>
+  </a>
+  <script>
+    const translations = {
+      en: {
+        pageTitle: "Bahadurgarh Property Rental Service | Ramesh Kumar", navLabel: "Main navigation", highlightsLabel: "Service highlights",
+        brandTagline: "Homes · Shops · Offices", brandLabel: "Bahadurgarh Property Rental Service home",
+        navServices: "Our services", navContact: "Contact", whatsapp: "WhatsApp",
+        heroImageAlt: "A welcoming modern home with a garden", heroEyebrow: "Bahadurgarh &amp; nearby areas",
+        heroTitle: "A better place<br>to call your own.", heroHindi: "The right rental in Bahadurgarh",
+        heroIntro: "Looking for a home, shop, office or showroom on rent? Or ready to rent out your property? We’ll help you find the right match.",
+        findRental: "Find a rental", rentOut: "Rent out my property", personalAssistance: "Personal assistance from Ramesh Kumar",
+        fastAssistance: "Fast assistance", localHelp: "Local help when you need it", genuineLeads: "Genuine leads",
+        ownersSeekers: "For owners &amp; seekers", resCommercial: "Residential &amp; commercial", propertyTypes: "Homes, shops, offices &amp; showrooms",
+        servicesKicker: "How we can help", servicesTitle: "One local contact.<br>Every kind of rental.",
+        servicesIntro: "Whether you’re letting a property or looking for one, get practical assistance for residential and commercial rentals.",
+        ownersTitle: "For property owners", ownersSubtitle: "For property owners", ownerHouse: "Rent out your house or flat",
+        ownerCommercial: "Rent out your shop, office or showroom", reliableTenants: "Get help finding genuine, reliable tenants", listProperty: "List my property",
+        tenantsTitle: "For tenants &amp; businesses", tenantsSubtitle: "For tenants and businesses", tenantHouse: "Find a house or flat on rent",
+        tenantCommercial: "Find a shop, office or showroom", budgetLocation: "Explore options by budget and location", tellUs: "Tell us what you need",
+        localSupport: "Local rental assistance", hindiSectionTitle: "Looking for a rental in Bahadurgarh?",
+        hindiSectionIntro: "Contact us for houses, flats, shops, offices and showrooms for rent. We’ll help you find an option that suits your needs.",
+        hindiOwnerHome: "Rent out your house or flat", hindiTenantHome: "Find a house or flat for rent",
+        hindiOwnerCommercial: "Rent out a shop, office or showroom", hindiTenantCommercial: "Find a shop, office or showroom for rent",
+        hindiGenuine: "Help finding reliable tenants", hindiBudget: "Options based on budget and location",
+        serviceArea: "Service area: Bahadurgarh and nearby areas", contactKicker: "Let’s find your next place",
+        contactTitle: "Start with a quick message.", contactSubtitle: "Call or message us for help with your rental requirements.",
+        whatsappRamesh: "WhatsApp Ramesh", callRamesh: "Call 99114 50828",
+        footerService: "Bahadurgarh Property Rental Service · Residential &amp; Commercial", footerContact: "Ramesh Kumar",
+        floatingWhatsappLabel: "Message Ramesh Kumar on WhatsApp"
+      },
+      hi: {
+        pageTitle: "बहादुरगढ़ प्रॉपर्टी रेंटल सर्विस | रमेश कुमार", navLabel: "मुख्य नेविगेशन", highlightsLabel: "हमारी सेवाएँ",
+        brandTagline: "मकान · दुकान · ऑफिस", brandLabel: "बहादुरगढ़ प्रॉपर्टी रेंटल सर्विस होम",
+        navServices: "हमारी सेवाएँ", navContact: "संपर्क", whatsapp: "व्हाट्सऐप",
+        heroImageAlt: "बगीचे के साथ एक सुंदर आधुनिक घर", heroEyebrow: "बहादुरगढ़ एवं आसपास के क्षेत्र",
+        heroTitle: "अपनी पसंद की<br>जगह किराये पर पाएँ।", heroHindi: "बहादुरगढ़ में किराये की सही जगह",
+        heroIntro: "किराये पर घर, दुकान, ऑफिस या शोरूम चाहिए? या अपनी प्रॉपर्टी किराये पर देनी है? सही विकल्प ढूँढने में हम आपकी मदद करेंगे।",
+        findRental: "किराये की प्रॉपर्टी पाएँ", rentOut: "प्रॉपर्टी किराये पर दें", personalAssistance: "रमेश कुमार से व्यक्तिगत सहायता",
+        fastAssistance: "त्वरित सहायता", localHelp: "ज़रूरत पड़ने पर स्थानीय मदद", genuineLeads: "विश्वसनीय संपर्क",
+        ownersSeekers: "मालिकों एवं किरायेदारों के लिए", resCommercial: "आवासीय एवं व्यावसायिक", propertyTypes: "मकान, दुकान, ऑफिस एवं शोरूम",
+        servicesKicker: "हमारी सेवाएँ", servicesTitle: "एक स्थानीय संपर्क।<br>हर तरह की रेंटल सेवा।",
+        servicesIntro: "प्रॉपर्टी किराये पर देनी हो या किराये की तलाश हो, आवासीय एवं व्यावसायिक प्रॉपर्टी के लिए सहायता पाएँ।",
+        ownersTitle: "प्रॉपर्टी मालिकों के लिए", ownersSubtitle: "मालिकों के लिए सहायता", ownerHouse: "अपना घर या फ्लैट किराये पर दें",
+        ownerCommercial: "दुकान, ऑफिस या शोरूम किराये पर दें", reliableTenants: "विश्वसनीय किरायेदार खोजने में सहायता पाएँ", listProperty: "मेरी प्रॉपर्टी लिस्ट करें",
+        tenantsTitle: "किरायेदारों एवं व्यवसायों के लिए", tenantsSubtitle: "किरायेदारों एवं व्यवसायों के लिए सहायता", tenantHouse: "किराये पर घर या फ्लैट ढूँढें",
+        tenantCommercial: "किराये पर दुकान, ऑफिस या शोरूम ढूँढें", budgetLocation: "बजट एवं लोकेशन के अनुसार विकल्प पाएँ", tellUs: "अपनी ज़रूरत बताएँ",
+        localSupport: "आपकी स्थानीय रेंटल सहायता", hindiSectionTitle: "बहादुरगढ़ में किराये की प्रॉपर्टी चाहिए?",
+        hindiSectionIntro: "किराये पर घर, फ्लैट, दुकान, ऑफिस एवं शोरूम के लिए संपर्क करें। आपकी ज़रूरत के अनुसार विकल्प ढूँढने में हम मदद करेंगे।",
+        hindiOwnerHome: "अपना घर या फ्लैट किराये पर दें", hindiTenantHome: "किराये पर घर या फ्लैट ढूँढें",
+        hindiOwnerCommercial: "दुकान, ऑफिस या शोरूम किराये पर दें", hindiTenantCommercial: "किराये पर दुकान, ऑफिस या शोरूम ढूँढें",
+        hindiGenuine: "विश्वसनीय किरायेदार खोजने में सहायता", hindiBudget: "बजट एवं लोकेशन के अनुसार विकल्प",
+        serviceArea: "सेवा क्षेत्र: बहादुरगढ़ एवं आसपास के क्षेत्र", contactKicker: "अपनी अगली जगह ढूँढें",
+        contactTitle: "एक संदेश से शुरुआत करें।", contactSubtitle: "किराये की ज़रूरत के लिए कॉल या संदेश करें।",
+        whatsappRamesh: "रमेश जी को व्हाट्सऐप करें", callRamesh: "कॉल करें: 99114 50828",
+        footerService: "बहादुरगढ़ प्रॉपर्टी रेंटल सर्विस · आवासीय एवं व्यावसायिक", footerContact: "रमेश कुमार",
+        floatingWhatsappLabel: "रमेश कुमार को व्हाट्सऐप संदेश भेजें"
+      }
+    };
+    const whatsappMessages = {
+      en: {
+        general: "Hi Ramesh ji, I am looking for rental property services in Bahadurgarh.",
+        tenant: "Hi Ramesh ji, I am looking for a property on rent in Bahadurgarh.",
+        owner: "Hi Ramesh ji, I want to rent out my property in Bahadurgarh."
+      },
+      hi: {
+        general: "नमस्ते रमेश जी, मुझे बहादुरगढ़ में किराये की प्रॉपर्टी के लिए सहायता चाहिए।",
+        tenant: "नमस्ते रमेश जी, मुझे बहादुरगढ़ में किराये पर प्रॉपर्टी चाहिए।",
+        owner: "नमस्ते रमेश जी, मुझे बहादुरगढ़ में अपनी प्रॉपर्टी किराये पर देनी है।"
+      }
+    };
+    const languageToggle = document.querySelector(".language-toggle");
+    function setLanguage(language) {
+      document.documentElement.lang = language;
+      document.title = translations[language].pageTitle;
+      document.querySelector(".nav").setAttribute("aria-label", translations[language].navLabel);
+      document.querySelectorAll("[data-i18n]").forEach((element) => {
+        const translated = translations[language][element.dataset.i18n];
+        if (translated !== undefined) element.innerHTML = translated;
+        element.lang = language;
+      });
+      document.querySelectorAll("[data-i18n-aria]").forEach((element) => {
+        element.setAttribute("aria-label", translations[language][element.dataset.i18nAria]);
+      });
+      document.querySelector("[data-i18n-alt]").alt = translations[language].heroImageAlt;
+      languageToggle.textContent = language === "en" ? "हिंदी" : "English";
+      languageToggle.setAttribute("aria-label", language === "en" ? "Switch language to Hindi" : "Switch language to English");
+      languageToggle.setAttribute("aria-pressed", String(language === "hi"));
+      document.querySelectorAll("a[data-message]").forEach((link) => {
+        link.href = `https://wa.me/919911450828?text=${encodeURIComponent(whatsappMessages[language][link.dataset.message])}`;
+      });
+    }
+    languageToggle.addEventListener("click", () => {
+      setLanguage(document.documentElement.lang === "en" ? "hi" : "en");
+    });
+    setLanguage("en");
+  </script>
+</body>
+</html>

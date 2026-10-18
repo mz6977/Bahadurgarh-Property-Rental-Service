@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 620 170" role="img" aria-labelledby="title">
+  <title id="title">Bahadurgarh Property Rental Service</title>
+  <g fill="#142b50">
+    <path d="M5 91 87 13l41 39V34h18v35l37 34v25h-43l-53-47-54 50H5z"/>
+    <path d="M90 21 163 91h-30L88 53 29 108H7z"/>
+  </g>
+  <path d="m24 111 64-59 49 45v57H24z" fill="#fff" stroke="#e2a51b" stroke-width="7"/>
+  <path d="M24 154c41-7 86-7 130 0" fill="none" stroke="#e2a51b" stroke-linecap="round" stroke-width="6"/>
+  <g fill="#142b50">
+    <path d="M68 102h12v12H68zM87 102h12v12H87zM68 121h12v12H68zM87 121h12v12H87z"/>
+    <path d="M146 100h38v24h-38z" fill="#e2a51b"/>
+  </g>
+  <g font-family="Arial, Helvetica, sans-serif" font-weight="800">
+    <text x="207" y="56" fill="#142b50" font-size="39" letter-spacing=".3">BAHADURGARH</text>
+    <text x="222" y="105" fill="#142b50" font-size="29">PROPERTY</text>
+    <text x="405" y="105" fill="#e2a51b" font-size="29">RENTAL</text>
+    <path d="M215 130h62m252 0h64" fill="none" stroke="#142b50" stroke-width="3"/>
+    <text x="290" y="143" fill="#e2a51b" font-size="31">SERVICE</text>
+  </g>
+</svg>
